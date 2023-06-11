@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Main container styling */
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styling for the stopwatch form container */
+.formContainer {
+    border: 1px solid white;
+    background-color: black;
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 40px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+/* Styling for the header */
+.header {
+    color: rgb(223, 167, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+/* Body styling */
+body {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Styling for the stopwatch display */
+.stopwatch {
+    padding: 20px 24px;
+    border-radius: 10px;
+}
+
+/* Styling for the timer display */
+.timerDisplay {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/* Styling for the buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+/* Styling for the common button class */
+.btn {
+    background-color: grey;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Hover effect for the start button */
+#startBtn:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Hover effect for the stop button */
+#stopBtn:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Hover effect for the reset button */
+#resetBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 576px) {
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .timerDisplay {
+        font-size: 32px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
